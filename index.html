@@ -7,9 +7,9 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 20px;
             background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
         }
         .factura {
             max-width: 600px;
@@ -19,84 +19,15 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             margin: auto;
         }
-        h2 {
-            text-align: center;
-            color: #333;
-        }
-        .info {
-            margin-bottom: 20px;
-        }
-        .info p {
-            margin: 5px 0;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        table, th, td {
-            border: 1px solid #ddd;
-        }
-        th, td {
-            padding: 10px;
-            text-align: center;
-        }
-        th {
-            background: #007bff;
-            color: white;
-        }
-        .total {
-            text-align: right;
-            font-size: 18px;
-            font-weight: bold;
-            margin-top: 10px;
+        h1 {
+            color: red;
         }
     </style>
 </head>
 <body>
-
-<div class="factura">
-    <h2>Factura</h2>
-    
-    <div class="info">
-        <p><strong>Empresa:</strong> Mi Empresa S.A.</p>
-        <p><strong>Dirección:</strong> Calle 123, Ciudad</p>
-        <p><strong>Fecha:</strong> <span id="fecha"></span></p>
+    <div class="factura">
+        <h1>Factura</h1>
+        <p>Esta es una factura de prueba.</p>
     </div>
-
-    <table>
-        <tr>
-            <th>Producto</th>
-            <th>Cantidad</th>
-            <th>Precio</th>
-            <th>Total</th>
-        </tr>
-        <tr>
-            <td>Producto 1</td>
-            <td>2</td>
-            <td>$10.00</td>
-            <td>$20.00</td>
-        </tr>
-        <tr>
-            <td>Producto 2</td>
-            <td>1</td>
-            <td>$15.00</td>
-            <td>$15.00</td>
-        </tr>
-        <tr>
-            <td>Producto 3</td>
-            <td>3</td>
-            <td>$7.00</td>
-            <td>$21.00</td>
-        </tr>
-    </table>
-
-    <p class="total">Total a pagar: <strong>$56.00</strong></p>
-</div>
-
-<script>
-    // Script para mostrar la fecha actual en la factura
-    document.getElementById("fecha").innerText = new Date().toLocaleDateString();
-</script>
-
 </body>
 </html>
